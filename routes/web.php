@@ -14,21 +14,18 @@ use Psy\Readline\Hoa\ConsoleCursor;
 |
 */
 
+
 Route::get('/', function () {
-    
-    $nombre = "JUAN JOSÉ";
-    return view('welcome', ["nombre" => $nombre]);
-    
-
-});
-
-Route:: get('/', function () {
-
-    $productos = [
-        ["nombre" =>"MT-09 SP", "Precio" => "90.000.000 COP"],
-        ["nombre" =>"CASCO SHAFT", "Precio" => "750.000 COP"],
-        ["nombre" =>"BOMBA DE FRENO BREMBO", "Precio" => "1.200.00 COP"],
+    $Productos = [
+        ["Nombre" => "Casco SHAFT", "Precio" => "270.000", "imagen" => "SHAFT.webp"],
+        ["Nombre" => "YAMAHA MT-09", "Precio" => "70.000.000","imagen" => "MT-09.jpg"],
+        ["Nombre" => "FRENO DISCO NISSIN", "Precio" => "770.000","imagen" => "FRENO NISSIN.jpg"],
+        ["Nombre" => "KTM DUKE 990 v3", "Precio" => "27.000.000","imagen" => "KTM 990.webp"],
+        ["Nombre" => "TRAJE LLUVIA AP", "Precio" => "170.000","imagen" => "TRAJE AP.webp"],
     ];
 
-    return view("List", ["productos" => $productos]);
+    $Nombre = "JUAN JOSÉ";
+
+    return view("welcome",["Productos" => $Productos], ["Nombre" => $Nombre]);
+    
 });
