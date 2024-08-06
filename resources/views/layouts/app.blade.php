@@ -13,15 +13,22 @@
     <header>
 
         {{-- Navbar --}}
-        @include("layouts.Navbar")
+        
+        @include('layouts.Navbar')
         
         <div class="font-semibold text-end text-cyan-400 mx-5">
-          BIENVENIDO {{$Nombre}} A HYPERMOTOS!
+          BIENVENIDO !
 
         </div>
     </header>
     
     <main>
+
+      <div class="bg-red-600 my-4 text-center">
+
+        <h1 class="text-lg font-semibold m-4 uppercase">@yield("Cabecera")</h1>
+        
+      </div>
 
         @yield("contenido")
 

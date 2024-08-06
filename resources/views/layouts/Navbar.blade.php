@@ -1,6 +1,11 @@
-<div class="navbar bg-base-100">
+<div class="navbar  bg-white">
   <div class="flex-1">
-    <a class="btn btn-ghost text-xl bg-white">Hypermotos</a>
+    
+    <a href="{{ route("productos.index")}}" method="POST" class="btn bg-red-600 text-xl">Hypermotos</a>
+  </div>
+
+  <div>
+    <a href="{{ route ("productos.create")}}" class="btn bg-gray-500 text-white">Crear producto</a>
   </div>
   <div class="flex-none">
     <div class="dropdown dropdown-end">
@@ -38,7 +43,7 @@
         <div class="w-10 rounded-full">
           <img
             alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
         </div>
       </div>
       <ul
@@ -46,12 +51,12 @@
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
         <li>
           <a class="justify-between">
-            Perfil
+            Profile
             <span class="badge">New</span>
           </a>
         </li>
-        <li><a>Configuracion</a></li>
-        <li><a>Cerrar sesion</a></li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
       </ul>
     </div>
   </div>

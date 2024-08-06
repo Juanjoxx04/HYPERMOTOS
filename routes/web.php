@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
 use Psy\Readline\Hoa\ConsoleCursor;
 
@@ -14,18 +15,8 @@ use Psy\Readline\Hoa\ConsoleCursor;
 |
 */
 
+Route::view('/', 'welcome');
 
-Route::get('/', function () {
-    $Productos = [
-        ["Nombre" => "Casco SHAFT", "Precio" => "270.000", "imagen" => "SHAFT.webp"],
-        ["Nombre" => "YAMAHA MT-09", "Precio" => "70.000.000","imagen" => "MT-09.jpg"],
-        ["Nombre" => "FRENO DISCO NISSIN", "Precio" => "770.000","imagen" => "FRENO NISSIN.jpg"],
-        ["Nombre" => "KTM DUKE 990 v3", "Precio" => "27.000.000","imagen" => "KTM 990.webp"],
-        ["Nombre" => "TRAJE LLUVIA AP", "Precio" => "170.000","imagen" => "TRAJE AP.webp"],
-    ];
+// CRUD 
 
-    $Nombre = "JUAN JOSÉ";
-
-    return view("welcome",["Productos" => $Productos], ["Nombre" => $Nombre]);
-    
-});
+Route::resource('productos', ProductoController::class); // crea las 7 rutas del CRUD
