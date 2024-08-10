@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use Psy\Readline\Hoa\ConsoleCursor;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +15,22 @@ use Psy\Readline\Hoa\ConsoleCursor;
 |
 */
 
-Route::view('/', 'welcome');
+    Route::view('/', "welcome")->name("home");
 
-// CRUD 
+// Ruta para los productos
 
-Route::resource('productos', ProductoController::class); // crea las 7 rutas del CRUD
+Route::resource("productos", ProductoController::class)->middleware("auth");
+
+//Dashboard
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';

@@ -9,8 +9,7 @@
 
               <div class="card bg-base-100 w-85 shadow-xl"> 
 
-                <figure><img src={{ $producto->Nombre}}" alt=" {{$producto->Nombre}}" /></figure>
-                </figure>
+                <figure><img src="https://loremflickr.com/200/200/store&{{ $producto->nombre }}" alt="{{ $producto->nombre }} " /></figure>
                 <div class="card-body">
                   <h2 class="card-title">
                     {{ $producto->nombre }}
