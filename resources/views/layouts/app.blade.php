@@ -17,8 +17,7 @@
         
         @include('layouts.Navbar')
         
-        <div class="font-semibold text-end text-cyan-400 mx-5">
-          BIENVENIDO !
+            
 
         </div>
     </header>
@@ -35,8 +34,8 @@
 
     </main>
 
-    <footer class="footer bg-neutral text-neutral-content items-center p-4">
-        <aside class="grid-flow-col items-center">
+    <footer class="footer bg-white text-neutral-content items-center p-4">
+        <aside class="grid-flow-col items-center text-red-600">
           <svg
             width="36"
             height="36"
@@ -50,7 +49,7 @@
           </svg>
           <p>Copyright © By Hypermotos S.A.S - Todos los derechos reservados</p>
         </aside>
-        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+        <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end text-red-600">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
