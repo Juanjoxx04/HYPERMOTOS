@@ -94,13 +94,8 @@
                         liderando el camino hacia nuevas aventuras.
                     </p>    
 
-          <button class="btn bg-red-600 border-red-600 text-white">Comenzar</button>
+          <a href="{{ route("login")}}" class="btn bg-red-600 border-red-600 text-white">Comenzar</a>
         </div>
       </div>
     </div>
-
-
 @endsection
-
-
-

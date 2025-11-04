@@ -4,8 +4,7 @@
 
     <div class="mx-4">
     
-    <img src="IMG/moto.jpg" fill="none" viewBox="0 0 24 24" stroke-
-    width="1.5" stroke="currentColor" class="size-12">
+    <img src="IMG/moto.jpg" fill="none" class="size-20">
     
     </div>
     
@@ -24,7 +23,7 @@
             <li><a href="{{ route('home') }}">HYPERMOTOS</a></li>
             <li><a href="{{ route('home') }}">Servicios</a></li>
             <li><a href="{{ route('productos.index') }}">Productos</a></li>
-            <li><a href="{{ route('home') }}">Acerca de nosotros</a></li>
+            <li><a href="{{ route('conocenos') }}">Acerca de nosotros</a></li>
           </ul>
         </div>
       </div>
@@ -53,8 +52,7 @@
         </div>
     </div>
     
-    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-
-    content bg-base-100 rounded-box w-52">
+    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
     
       <li>
         <a href="{{ route('dashboard') }}">Dashboard</a>
