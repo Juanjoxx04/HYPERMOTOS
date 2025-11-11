@@ -3,6 +3,7 @@
 @section("titulo", "Hypermotos/Welcome")
 
 @section("contenido") 
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <div
       class="hero min-h-screen"
