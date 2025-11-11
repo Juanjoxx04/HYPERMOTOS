@@ -7,8 +7,8 @@
     <link rel="icon" href="{{ asset('IMG/moto-removebg-preview-removebg-preview.ico')}}" type="image/png">
     <title>@yield("titulo", "Hypermotos")</title>
 
-   
-    @vite("resources/css/app.css")
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+
 </head>
 
 <body>
