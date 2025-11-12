@@ -17,8 +17,6 @@
         {{-- Navbar --}}
         
         @include('layouts.Navbar')
-        
-            
 
         </div>
     </header>
