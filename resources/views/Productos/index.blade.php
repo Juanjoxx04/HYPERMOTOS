@@ -9,16 +9,16 @@
 
                 <figure>
                     <img src="{{ $producto->imagen_url }}"
-                        alt="{{ $producto->Nombre ?? 'Producto sin nombre'}}"/>
+                        alt="{{ $producto->imagen_url ?? 'Producto sin imagen'}}"/>
                 </figure>
                 <div class="card-body">
                     <h2 class="card-title">
-                        <div class="label-name">{{ $producto->Nombre ?? 'Producto desconocido' }}</div>
+                        <div class="label-name">{{ $producto->nombre ?? 'Producto desconocido' }}</div>
                     </h2>
-                    <p class="text-black ">Vendido por: {{ $producto->Proveedor ?? 'Desconocido'}}</p>
+                    <p class="text-black ">Vendido por: {{ $producto->proveedor ?? 'Desconocido'}}</p>
 
                     <h2 class="card-actions justify-end">
-                        <div class="label-price">$ {{ number_format($producto->Precio, 0, ',','.') }}</div>
+                        <div class="label-price">$ {{ number_format($producto->precio, 0, ',','.') }}</div>
                     </h2>
                     
                     <div class="card-actions justify-end mt-8">
