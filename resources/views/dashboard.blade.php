@@ -7,7 +7,7 @@
 <div class="hero bg-base-200 min-h-screen">
     <div class="hero-content text-center">
       <div class="max-w-md">
-        <h1 class="text-4xl font-bold">Hola, {{auth()->user()->name}} !</h1>
+        <h1 class="text-4xl font-bold text-red-600">Hola, {{auth()->user()->name}} !</h1>
         <p class="py-6">
           Bienvienido a la web Hypermotos, donde tus sueños se haran realidad en  dos ruedas.
         </p>

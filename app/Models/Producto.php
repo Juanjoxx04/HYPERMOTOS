@@ -8,5 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Producto extends Model
 {
     use HasFactory;
-    protected $fillable = ["Nombre","Precio","Stock","Proveedor", "imagen_url"];
+    protected $fillable = ["nombre", "precio", "stock", "proveedor", "imagen_url"];
+
+    public function shopping_cart()
+    {
+        return $this->hasMany(shoppingCart::class);
+    }
 }

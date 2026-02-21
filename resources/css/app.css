@@ -5,16 +5,11 @@
 
 .label-price {
     color: rgb(255, 0, 0);
-    text-align: start;
-    font-weight: bold;
-    font-size: clamp(1rem, 5vw, 1.8rem);
+    text-align: end;
+    font-weight: 600;
+    font-size: clamp(1rem, 5vw, 1.5rem);
     width: clamp(9rem, 13vw, 12rem);
     height: clamp(2rem, 2vw, 3.5rem);
-}
-
-.btn-edit {
-    background-color: white;
-    color: black;
 }
 
 .label-name {
@@ -22,6 +17,18 @@
     text-align: start;
     font-size: clamp(1rem, 7vw, 1.7rem);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-buy-color{
+    background-color: rgb(223, 0, 0);
+    border-color: rgb(255, 0, 0);
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-buy-color:hover {
+    background-color: rgb(11, 21, 38);
+    border-color: rgb(11, 21, 38);
 }
 
 

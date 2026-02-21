@@ -35,10 +35,10 @@
 
     <div class="flex-1 hidden md:flex space-x-4 text-red-600">
 
-        <a href="{{ route('home') }}" class="btn btn-ghost btn-sm">HYPERMOTOS</a>
-        <a href="{{ route('home') }}" class="btn btn-ghost btn-sm">Servicios</a>
-        <a href="{{ route('productos.index') }}" class="btn btn-ghost btn-sm">Productos</a>
-        <a href="{{ route('conocenos') }}" class="btn btn-ghost btn-sm">Acerca de nosotros</a>
+        <a href="{{ route('home') }}" class="btn btn-ghost btn-md">HYPERMOTOS</a>
+        <a href="{{ route('home') }}" class="btn btn-ghost btn-md">Servicios</a>
+        <a href="{{ route('productos.index') }}" class="btn btn-ghost btn-md">Productos</a>
+        <a href="{{ route('conocenos') }}" class="btn btn-ghost btn-md">Acerca de nosotros</a>
 
     </div>
 
@@ -46,7 +46,7 @@
   registro --}}
 
     @auth
-        <h3 class="mr-4 font-semibold">Hola, {{ auth()->user()->name }}</h3>
+        <h3 class="mr-4 font-semibold text-gray-800">Hola, {{ auth()->user()->name }}</h3>
         <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar mr-4">
                 <div class="w-10 rounded-full">
@@ -69,7 +69,7 @@
                         @csrf
                         <a href="{{ route('logout') }}"
                             onclick="event.preventDefault();
-      this.closest('form').submit();">Logout</a>
+      this.closest('form').submit();">Cerrar sesión</a>
 
                     </form>
                 </li>
