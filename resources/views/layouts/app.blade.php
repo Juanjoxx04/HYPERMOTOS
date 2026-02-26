@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="{{ asset('IMG/moto-removebg-preview-removebg-preview.ico')}}" type="image/png">
     <title>@yield("titulo", "Hypermotos")</title>
-
-@vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 
@@ -84,6 +84,5 @@
           </a>
         </nav>
       </footer>
-
 </body>
 </html>

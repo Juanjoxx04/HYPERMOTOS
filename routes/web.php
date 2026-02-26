@@ -44,7 +44,8 @@ Route::middleware('auth')->group(function () {
 
 Route::view('/conocenos', 'layouts.conocenos')->name('conocenos');
 
-Route::get('/shopping-cart', [ShoppingCartController::class, 'index'])->middleware('auth')->name('shopping.cart');
+Route::get('/shopping-cart', [ShoppingCartController::class, 'index'])->middleware('auth')->name('shopping.index');
+Route::post('/shopping-cart', [ShoppingCartController::class, 'store'])->middleware('auth')->name('shopping.store');
 
 
 require __DIR__ . '/auth.php';

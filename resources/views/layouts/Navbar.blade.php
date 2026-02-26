@@ -35,7 +35,7 @@
 
     <div class="flex-1 hidden md:flex space-x-4 text-red-600">
 
-        <a href="{{ route('home') }}" class="btn btn-ghost btn-md">HYPERMOTOS</a>
+        <a href="{{ route('home') }}" class="btn btn-ghost btn-md">Hypermotos</a>
         <a href="{{ route('home') }}" class="btn btn-ghost btn-md">Servicios</a>
         <a href="{{ route('productos.index') }}" class="btn btn-ghost btn-md">Productos</a>
         <a href="{{ route('conocenos') }}" class="btn btn-ghost btn-md">Acerca de nosotros</a>
@@ -46,6 +46,21 @@
   registro --}}
 
     @auth
+    @php
+        $cartCount = \App\Models\ShoppingCart::where('user_id', auth()->id())->sum('cantidad');
+    @endphp
+
+    <button type="button" class="btn btn-ghost btn-circle btn-cart mr-4 relative" onclick="toggleCart()">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#df0000">
+            <path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/>
+        </svg>
+        @if($cartCount > 0)
+        <span class="absolute top-1 right-1 bg-red-600 text-white text-xs rounded-full px-2 font-bold w-5 h-5 flex items-center justify-center">
+            {{$cartCount}}
+        </span>
+        @endif
+    </button>
+
         <h3 class="mr-4 font-semibold text-gray-800">Hola, {{ auth()->user()->name }}</h3>
         <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar mr-4">
