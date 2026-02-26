@@ -53,5 +53,7 @@ function updateCartBadge(count) {
             badge.textContent = count;
             document.querySelector(".btn-cart").appendChild(badge);
         }
+    } else if (badge) {
+        badge.remove();
     }
 }
