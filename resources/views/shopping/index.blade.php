@@ -30,7 +30,7 @@
     </div>
     
     <button class="btn btn-primary mt-4" onclick="openConfirmModal()">
-        Confirmar Compra
+        Finalizar compra
     </button>
 </div>
 @endsection
