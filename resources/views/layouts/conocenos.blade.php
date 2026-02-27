@@ -1,6 +1,6 @@
 @extends("layouts.app")
 
-@section("titulo", "Hypermotos/Welcome")
+@section("titulo", "Hypermotos/conocenos")
 
 @section("contenido") 
 

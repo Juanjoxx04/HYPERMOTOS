@@ -11,26 +11,14 @@
 
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col">
     <header>
-
-        {{-- Navbar --}}
-        
         @include('layouts.Navbar')
-
         </div>
     </header>
     
-    <main>
-
-      <div class="bg-red-600 my-4 text-center">
-
-        <h1 class="text-lg font-semibold m-4 uppercase">@yield("Cabecera")</h1>
-        
-      </div>
-
+    <main class="flex-1">
         @yield("contenido")
-
     </main>
 
     <footer class="footer bg-white text-neutral-content items-center p-4">
