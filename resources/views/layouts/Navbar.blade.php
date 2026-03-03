@@ -23,7 +23,7 @@
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow
             bg-base-100 rounded-box w-52">
 
-                <li><a href="{{ route('home') }}">HYPERMOTOS</a></li>
+                <li><a href="{{ route('home') }}">Bienvenidos</a></li>
                 <li><a href="{{ route('home') }}">Servicios</a></li>
                 <li><a href="{{ route('productos.index') }}">Productos</a></li>
                 <li><a href="{{ route('conocenos') }}">Acerca de nosotros</a></li>
@@ -35,7 +35,7 @@
 
     <div class="flex-1 hidden md:flex space-x-4 text-red-600">
 
-        <a href="{{ route('home') }}" class="btn btn-ghost btn-md">Hypermotos</a>
+        <a href="{{ route('home') }}" class="btn btn-ghost btn-md">Bienvenidos</a>
         <a href="{{ route('home') }}" class="btn btn-ghost btn-md">Servicios</a>
         <a href="{{ route('productos.index') }}" class="btn btn-ghost btn-md">Productos</a>
         <a href="{{ route('conocenos') }}" class="btn btn-ghost btn-md">Acerca de nosotros</a>
