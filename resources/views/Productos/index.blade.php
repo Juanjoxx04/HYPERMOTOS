@@ -26,7 +26,7 @@
                     <button type="button" class="btn btn-primary btn-buy-color btn-add-cart" 
                     data-producto-id="{{$producto->id}}" data-store-url="{{route('shopping.store')}}">
                         @else
-                        <a href="{{route('register')}}" class="btn btn-primary btn-buy-color">
+                        <a href="{{route('login')}}" class="btn btn-primary btn-buy-color">
                     @endauth
                             Añadir al carrito
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">

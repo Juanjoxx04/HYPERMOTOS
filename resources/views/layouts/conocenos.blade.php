@@ -94,7 +94,7 @@
                         liderando el camino hacia nuevas aventuras.
                     </p>    
 
-          <a href="{{ route("register")}}" class="btn bg-red-600 border-red-600 text-white mt-10">Comenzar</a>
+          <a href="{{ route("login")}}" class="btn bg-red-600 border-red-600 text-white mt-10">Comenzar</a>
         </div>
       </div>
     </div>

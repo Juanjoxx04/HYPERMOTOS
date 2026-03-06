@@ -19,7 +19,7 @@
           </p>
 
           
-          <a href="{{ route('register') }}" class="btn btn-outline border-red-600 bg-red-600 text-white">Comenzar</a>
+          <a href="{{ route('login') }}" class="btn btn-outline border-red-600 bg-red-600 text-white">Comenzar</a>
 
 
 @endsection          
