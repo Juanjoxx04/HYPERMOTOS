@@ -1,10 +1,10 @@
-<div class="navbar bg-white shadow-lg">
+<div class="navbar bg-white shadow-lg fixed top-0 z-50">
 
     {{-- logo --}}
 
     <div class="mx-4">
 
-        <a href="{{ Route('home') }}"><img src="IMG/moto.jpg" fill='none' class="size-20"></a>
+        <a href="{{ Route('home') }}"><img src="IMG/moto.jpg" fill='none' class="size-16"></a>
 
     </div>
 
